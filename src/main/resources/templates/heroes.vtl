@@ -1,0 +1,16 @@
+<h1>Your heroes</h1>
+#if ($heroes)
+<ul>
+  #foreach ($hero in $heroes)
+<li>
+<p>Your hero:</p>
+<p>Name: $hero.getName()</p>
+<p>Age: $hero.getAge()</p>
+<p>Power: $hero.getPower()</p>
+<p>Weakness: $hero.getweakness()</p>
+<p>$hero.getCreatedAt()</p>
+</li>
+  #end
+</ul>
+
+<a href="/heroes/new">Add new hero</a>
