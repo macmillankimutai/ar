@@ -6,17 +6,17 @@ public class Hero {
 
   private String mName;
    private int mAge;
-   private String mStrength;
+   private String mPower;
    private String mWeakness;
    private boolean mCompleted;
    private LocalDateTime mCreatedAt;
    private static List<Hero> instances = new ArrayList<Hero>();
    private int mId;
 
-  public Hero(String name, int age, String strength, String weakness){
+  public Hero(String name, int age, String power, String weakness){
     mName = name;
     mAge = age;
-    mStrength = strength;
+    mPower = power;
     mWeakness = weakness;
     mCompleted = false;
     mCreatedAt = LocalDateTime.now();
@@ -31,8 +31,8 @@ public class Hero {
     return mAge;
   }
 
-  public String getStrength() {
-    return mStrength;
+  public String getPower() {
+    return mPower;
   }
 
   public String getWeakness() {
