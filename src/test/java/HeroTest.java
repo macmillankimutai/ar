@@ -6,19 +6,19 @@ public class HeroTest {
 
   @Test
    public void Hero_instantiatesCorrectly() {
-   Hero myHero = new Hero("HumanTorch", 39, "Ignitefire", "Girls");
+   Hero myHero = new Hero("Flash", 29, "Speed", "Cold");
    assertEquals(true, myHero instanceof Hero);
    }
 
    @Test
    public void Hero_instantiatesWithDescription_String() {
-   Hero myHero = new Hero("HumanTorch", 39, "Ignitefire", "Girls");
-   assertEquals("HumanTorch", myHero.getName());
+   Hero myHero = new Hero("Superman", 27, "Flight", "Girls");
+   assertEquals("Superman", myHero.getName());
      }
 
     @Test
     public void isCompleted_isFalseAfterInstantiation_false() {
-    Hero myHero = new Hero("HumanTorch", 39, "Ignitefire", "Girls");
+    Hero myHero = new Hero("HumanTorch", 39, "Fire", "Water");
     assertEquals(false, myHero.isCompleted());
     }
 
@@ -31,7 +31,7 @@ public class HeroTest {
     @Test
     public void all_returnsAllInstancesOfHero_true() {
     Hero firstHero = new Hero("HumanTorch", 39, "Ignitefire", "Girls");
-    Hero secondHero = new Hero("InvisibleWoman", 40, "visibility", "Men");
+    Hero secondHero = new Hero("WonderWoman", 40, "visibility", "Men");
     assertEquals(true, Hero.all().contains(firstHero));
     assertEquals(true, Hero.all().contains(secondHero));
     }
