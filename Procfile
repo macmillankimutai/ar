@@ -1,1 +1,1 @@
-web: ./buid/install/Hero/bin/Hero
+web: ./build/install/Hero/bin/Hero
